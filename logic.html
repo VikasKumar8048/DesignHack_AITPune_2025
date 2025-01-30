@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Scrolling Images</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f5ff;
+            /* Light blue background */
+            overflow: hidden;
+            /* Prevent horizontal scroll */
+        }
+
+        .carousel-container {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            padding: 20px 0;
+            background: white;
+            box-shadow: 0 5px 20px rgba(0, 0, 255, 0.2);
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            height: fit-content;
+            height: 500px;
+            margin-top: 200px;
+        }
+
+
+
+        .carousel-container .heading-testi {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            margin-bottom: 50px;
+            color: rgb(0, 0, 172);
+        }
+
+        .carousel {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            animation: scroll 35s linear infinite;
+        }
+
+        .carousel-item {
+            text-align: center;
+            display: inline-block;
+            width: 180px;
+            margin-left: 40px;
+        }
+
+        .carousel-item img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+
+            box-shadow: 0 5px 10px rgba(0, 123, 255, 0.3);
+        }
+
+        .carousel-item span {
+            display: block;
+            margin-top: 20px;
+            font-size: 19px;
+            color: #0f5bac;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        /* Animation for infinite scrolling */
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Duplicate content to create infinite effect */
+        .carousel-wrapper {
+            display: flex;
+            width: max-content;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="carousel-container">
+        <div class="heading-testi">
+
+            <br>
+            <h1>Testimonials</h1>
+            <br>
+        </div>
+
+        <div class="carousel-wrapper">
+
+
+            <div class="carousel" id="carousel">
+
+                <div class="carousel-item">
+                    <img src="nagpalImage-B08YjKJn.png" alt="Sophia">
+                    <span>Brig Vishal Nagpal
+                        <br>
+                        (Father of Shaurya Nagpal)
+                    </span>
+                </div>
+                <div class="carousel-item">
+                    <img src="Testi1Urvis_Pandey-DbAJNiE9.jpeg" alt="John">
+                    <span>Mr. Urvish Pande
+                        <br>
+                        India Head, Recruitments of
+                        <br>
+                        Master Card</span>
+                </div>
+                <div class="carousel-item">
+                    <img src="testi2Image2-6sXJ2VWD.jpg" alt="Emma">
+                    <span>Mr Harish
+                        <br>
+                        Alumni ETC Batch 2019-23</span>
+                </div>
+                <div class="carousel-item">
+                    <img src="testi3manoj pande-6K9a0mZt.jpg" alt="Liam">
+                    <span>Gen Manoj Pande
+                        <br>
+                        PVSM, AVSM,VSM, ADC
+                        <br>
+                        Chief of Army Staff</span>
+                </div>
+                <div class="carousel-item">
+                    <img src="testi4baba_kalyani-DUO7WvDn.jpg" alt="Michael">
+                    <span>Padma Bhushan Baba Kalyani
+                        <br>
+                        Founder & Chairman
+                        <br>
+                        Kalyani Group</span>
+                </div>
+
+
+                <div class="carousel-item">
+                    <img src="nagpalImage-B08YjKJn.png" alt="Sophia">
+                    <span>
+                        <span>Brig Vishal Nagpal
+                            <br>
+                            (Father of Shaurya Nagpal)
+                        </span>
+                    </span>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="testi5Image5-CdVmBpfK.jpg" alt="Sophia">
+                    <span>
+                        Maj Gen RK Raina
+                        <br>
+                        SM, PhD (Retd)
+                        <br>
+                        MD AWES
+                    </span>
+                </div>
+                <div class="carousel-item">
+                    <img src="sanjay kumari.jpg" alt="Olivia">
+                    <span>Lt Col Sanjay Kumar
+                        <br>
+                        (Father of Anushna Panwar IT)
+                        <br>
+                        (2021-22)</span>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="baljeet.jpg" alt="David">
+                    <span>Baljit Singh
+                        <br>
+                        mTatva, Alumni AIT
+                        <br>
+                        (2020)</span>
+                </div>
+
+                    
+                        <div class="carousel-item">
+                            <img src="sandeep.jpeg" alt="David">
+                            <span>Col Sandeep Nagrath
+                                <br>
+                                (Father of Shriya Nagrath)
+                                <br>
+                                Alumni AIT(2020)</span>
+                        </div>
+
+
+                    <div class="carousel-item">
+                        <img src="NKamalkar-DrkM9Ebm.png" alt="David">
+                        <span>N R Karmalkar
+                            <br>
+                            Vice Chancellor SPPU
+                            <br>
+                            (2017)</span>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="Dr.AnilSahasrabudh-RWbeBabz.jpg" alt="David">
+                        <span>Dr. Anil Sahasrabudhe
+                            <br>
+                            Director, COEP Pune
+                            <br>
+                            2011</span>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- Duplicate carousel for seamless scrolling -->
+            <!-- <div class="carousel" id="carousel-clone">
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/100" alt="John">
+                    <span>John</span>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/100" alt="Emma">
+                    <span>Emma</span>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/100" alt="Liam">
+                    <span>Liam</span>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/100" alt="Michael">
+                    <span>Michael</span>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/100" alt="Olivia">
+                    <span>Olivia</span>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/100" alt="Sophia">
+                    <span>Sophia</span>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/100" alt="David">
+                    <span>David</span>
+                </div>
+            </div> -->
+        </div>
+
+
+
+
+
+</body>
+
+</html>
